@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Things that Move Fast</title>
+     <!-- Link to external stylesheet for styles -->
+    <link rel="stylesheet" href="Moving.css">
+    <!-- External JavaScript file inclusion -->
+    <script src="Moving.js"></script>
+     <!-- Link to external font from Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Lemon&display=swap" rel="stylesheet"> 
+</head>
+
+<body>
+     <!-- Heading for the page -->
+    <h1>Things that Move Fast</h1>
+     <!-- Buttons to Choose Vehicle -->
+    <img id="memeImage1" src="car.png" width="200" height="200" style="display: none;"> <!-- Car Image -->
+    <img id="memeImage2" src="Boat.png" width="200" height="200" style="display: none;"><!-- Boat Image-->
+    <img id="memeImage3" src="Plane.png" width="200" height="200" style="display: none;"><!-- Plane Image -->
+    <br>
+    <button onclick="selectImage('memeImage1', 'Car.mp3')">Car</button> <!-- Car Button with sound-->
+    <button onclick="selectImage('memeImage2', 'Boat.mp3')">Boat</button> <!-- Boat Button with  sound-->
+    <button onclick="selectImage('memeImage3','Plane.mp3')">Plane</button> <!-- Plane Button with sound-->
+    <br><br>
+    <button id="startButton" onclick="startMoving()">Start</button> <!-- Start Button-->
+    <button id="stopButton" onclick="stopMoving(); stopSound();">Stop</button> <!-- Stop Button that stops sound also-->
+</body>
+
+</html>
